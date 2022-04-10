@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+html{
+    font-size:16px;
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color:#19A1AE;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-position: left -10% bottom 300px, right -10% top 400px;
+    background-repeat: no-repeat;
+}
+
+.card{
+    width:350px;
+    height:auto;
+    max-width:100%;
+    margin:0 auto;
+    background-color:#fff;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius:15px;
+    background-repeat: no-repeat,
+    no-repeat,
+    no-repeat;
+background-position: bottom right,
+    left,
+    right;
+}
+
+.card-top{
+    height:140px;
+    max-width:100%;
+    background-image:url(./images/bg-pattern-card.svg);    
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+    display:flex;
+    justify-content: center;
+    position: relative;
+}
+
+.card img{
+    display: block;
+    height:96px;
+    max-width:100%;
+    border:5px solid #fff;
+    border-radius:50%;
+    position:absolute;
+    transform: translateY(90%);
+}
+
+.card-content{
+    margin-top:72px;
+    text-align:center;
+}
+
+.card-title{
+    font-weight:bold;
+    font-size:18px;
+    margin-bottom:8px;   
+}
+
+.age, .location{
+    color:#6B7082;
+    font-weight:normal;
+}
+
+.location{
+    font-size:14px;
+}
+
+.card-statistics{
+    margin-top:24px;
+    padding-bottom:24px;
+    border-top:1px solid #E8E9EC;
+    display:flex;
+    text-align:center;
+    align-content:center;
+    justify-content: space-around;
+}
+
+.card-statistics p{
+    margin-top:25px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight:bold;
+}
+
+.num-desc{
+    margin-top:9px;
+    font-weight:normal;
+    font-size: 10px;
+    line-height: 12px;
+    line-height: 100%;
+    color:#6B7082;
+    letter-spacing: 1.5px;
+}
+
+
+@media only screen and (max-width:370px) {
+    .card{
+        width:90vw;
+    }
+
+}
+
+@media only screen and (max-width:250px) {
+    .card-statistics{
+        flex-direction: column;
+    }
+
+}
+
